@@ -64,7 +64,7 @@ class ApiClient {
       var data = json.decode(response.body);
       showColoredSnakeBar(Get.context!,
           color: Colors.red, msg: data["message"]);
-      Get.offAllNamed("/login");
+      Get.offAllNamed("/login");//only purpose show error handling
     } else {
       var data = json.decode(response.body);
       showColoredSnakeBar(Get.context!,
